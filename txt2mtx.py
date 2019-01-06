@@ -71,7 +71,7 @@ for line in f_input:
 			bag_words[word] = bag_words_one[word]
 	doc_count += 1
 	if doc_count % 10000 == 0:
-		print doc_count, 'documents processed...'
+		print(doc_count, 'documents processed...')
 #doc_file.close()
 f_input.close()
 
@@ -101,7 +101,7 @@ for line in f_input:
                         continue
         doc_count += 1
         if doc_count % 10000 == 0:
-                print doc_count, 'documents processed ......'
+                print(doc_count, 'documents processed ......')
 f_input.close()
 f_mtx.close()
 

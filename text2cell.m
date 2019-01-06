@@ -16,7 +16,8 @@ if(fid >= 3) %file opened successfully
     format = [format '%s'];
     
     %scan remainder of file
-    text = textscan(fid, format, 'delimiter', delimiter, 'BufSize', 2^16);
+    %text = textscan(fid, format, 'delimiter', delimiter, 'BufSize', 2^16);
+    text = textscan(fid, format, 'delimiter', delimiter);
     
     %allocate output
     A = cell(length(text{1})+1,columns);
