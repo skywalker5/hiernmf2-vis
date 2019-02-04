@@ -1,8 +1,8 @@
 function mtx2mat(data_file)
 
 X = mmread([data_file '.mtx']);
-%[X, term_subset, doc_subset] = tfidf(X, 5, 3);
-[X, term_subset, doc_subset] = tfidf(X, 1, 1);
+[X, term_subset, doc_subset] = tfidf(X, 5, 3);
+%[X, term_subset, doc_subset] = tfidf(X, 1, 1);
 
 voc = text2cell('vocabulary.txt', '\t');
 voc = voc(term_subset);

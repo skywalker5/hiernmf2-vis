@@ -1,1 +1,1 @@
-mtx2mat('test');
+run_hiernmf2('test',5);
